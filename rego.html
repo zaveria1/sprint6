@@ -1,0 +1,103 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rego Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="css/rego.css">
+</head>
+<body>
+
+	<div class="image">
+        <img src="image/home-img.svg" alt="">
+    </div>
+
+	<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> medcare. </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        
+        <a href="index.html">Doctors Availability</a>
+        <a href="">Book Appointment</a>
+        
+        <a href="login.html">Log In</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+
+
+<div class="container">
+	<div class="create">
+		<h2>Book your Appointment</h2>
+	</div>
+	<form id="form" class="form" action="signup.php" method="POST" name="rego-form" onsubmit="return validated()">
+        <div class="form-control">
+			<label for="firstname">First Name</label>
+			<input type="text" placeholder="firstname" id="firstname" name="firstname"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+        <div class="form-control">
+			<label for="lastname">Last Name</label>
+			<input type="text" placeholder="lastname" id="lastname" name="lastname"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+
+		<div class="form-control">
+			<label for="username" >Username </label>
+			<input type="text" placeholder="florinpop17" id="username" name="username"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="a@florin-pop.com" name="email" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		
+        <div class="form-control">
+			<label for="date">Date</label>
+			<input type="date" id=" date" name="date" placeholder="date" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+
+
+        <div class="form-control">
+			<label for="time">Select Time</label>
+			<input type="time" id="appt" name="appt"
+       min="09:00" max="18:00" required>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<button href="index.html"type="submit" id="submit" name="submit">submit</button>
+	</form>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
